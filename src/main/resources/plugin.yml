@@ -1,0 +1,9 @@
+name: MCBEMovie
+main: itsu.mcbe.mcbemovie.core.MCBEMovie
+version: 1.0.0
+author: Itsu
+api: ["1.0.0"]
+
+commands: 
+  movie: 
+    description: "MCBEMovie command. /movie [giveme | play]"
