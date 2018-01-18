@@ -1,11 +1,11 @@
-# MCBEMovie
+# MCBEMovie v2.0.0
 <b>v2.0.0でGIFからMP4再生に変わりました！</b>  
 MP4動画をサーバーの地図上で再生します。  
   
 ## 動作風景
 <img src="https://raw.githubusercontent.com/itsu020402/MCBEMovie/master/1.PNG">    
-<a href="https://twitter.com/itsu_dev/status/953999380578619392">https://twitter.com/itsu_dev/status/953999380578619392</a>  
-速攻でとったので直撮りです。見にくくてごめんなさい。  
+<a href="https://twitter.com/itsu_dev/status/953999380578619392">https://twitter.com/itsu_dev/status/953999380578619392</a>    
+速攻でとったので直撮りです。見にくくてごめんなさい。  
   
 ## 使い方
 mcbemovie.mp4をサーバーのカレントディレクトリに入れて起動。音楽はリソースパックのmusic.mcbemovieを再生します。見つからない場合は無音です。  
