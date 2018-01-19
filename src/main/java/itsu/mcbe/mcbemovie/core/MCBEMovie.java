@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.jcodec.api.FrameGrab;
+import org.jcodec.api.JCodecException;
 import org.jcodec.common.io.NIOUtils;
 import org.jcodec.scale.AWTUtil;
 
@@ -63,13 +64,14 @@ public class MCBEMovie extends PluginBase implements Listener {
                     
                     //動画を再生
                     try {
+                    	grab = FrameGrab.createFrameGrab(NIOUtils.readableChannel(movie));
                         BufferedImage image;
                         while (null != (image = getFrame())) {
                             Thread.sleep(34);
                             map.setImage(image);
                             p.sendImage(image, map);
                         }
-                    } catch (IOException | InterruptedException e) {
+                    } catch (IOException | InterruptedException | JCodecException e) {
                         e.printStackTrace();
                     }
 
